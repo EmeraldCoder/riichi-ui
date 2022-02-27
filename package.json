@@ -1,0 +1,13 @@
+{
+  "name": "riichi-design-system.workspace",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "lerna": "^4.0.0",
+    "npm-run-all": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "storybook"
+  ]
+}
