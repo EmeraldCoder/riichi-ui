@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 300 400" :width="58" :height="78">
+  <svg viewBox="0 0 300 400" :width="116" :height="156">
     <use :xlink:href="`https://cdn.phil.moe/riichi/riichi-tile-sprite.svg#${svgStoreKey}`" />
   </svg>
 </template>
