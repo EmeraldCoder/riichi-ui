@@ -26,7 +26,7 @@ const Template = (args) => ({
 export const Standard = Template.bind({})
 // More on args: https://storybook.js.org/docs/vue/writing-stories/args
 Standard.args = {
-  tile: '1m',
+  tile: '1s',
   isReversed: false
 }
 
