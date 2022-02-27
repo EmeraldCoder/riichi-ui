@@ -20,7 +20,7 @@ defineProps(['tile', 'isReversed'])
 }
 
 .tile.reversed {
-  background: #388e3c;
+  background: red;
 }
 .tile.reversed .tile-icon {
   visibility: hidden;
