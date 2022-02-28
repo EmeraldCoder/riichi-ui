@@ -2,6 +2,10 @@
   "name": "riichi-design-system.workspace",
   "private": true,
   "version": "0.0.0",
+  "scripts": {
+    "build-storybook": "lerna exec --scope riichi-design-system.storybook -- yarn build-storybook",
+    "chromatic": "lerna exec --scope riichi-design-system.storybook -- yarn chromatic"
+  },
   "dependencies": {
     "lerna": "^4.0.0",
     "npm-run-all": "^4.0.0"
