@@ -13,5 +13,6 @@ defineProps(['tiles'])
 <style scoped>
 .tile-group {
   display: flex;
+  gap: 15px;
 }
 </style>
