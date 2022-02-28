@@ -1,8 +1,5 @@
 {
   "name": "riichi-design-system.workspace",
   "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "storybook": "pnpm --filter riichi-design-system.storybook storybook"
-  }
+  "version": "0.0.0"
 }
