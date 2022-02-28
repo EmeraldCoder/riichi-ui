@@ -3,8 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "storybook": "pnpm --filter riichi-design-system.storybook storybook",
-    "build-storybook": "pnpm --filter riichi-design-system.storybook build-storybook",
-    "chromatic": "pnpm --filter riichi-design-system.storybook chromatic"
+    "storybook": "pnpm --filter riichi-design-system.storybook storybook"
   }
 }
