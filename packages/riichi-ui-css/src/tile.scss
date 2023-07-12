@@ -1,0 +1,86 @@
+@use "sass:math";
+@import './_variables';
+
+$defaultTilePadding: 5px;
+$defaultTileBorderWidth: 2px;
+$defaultTileWidth: $defaultTileIconWidth + ($defaultTilePadding * 2) + ($defaultTileBorderWidth * 2);
+$defaultTileHeight: $defaultTileIconHeight + ($defaultTilePadding * 2) + ($defaultTileBorderWidth * 2);
+
+$smallTilePadding: 2px;
+$smallTileBorderWidth: 1px;
+$smallTileWidth: $smallTileIconWidth + ($smallTilePadding * 2) + ($smallTileBorderWidth * 2);
+$smallTileHeight: $smallTileIconHeight + ($smallTilePadding * 2) + ($smallTileBorderWidth * 2);
+
+$xSmallTilePadding: 1px;
+$xSmallTileBorderWidth: 1px;
+$xSmallTileWidth: $xSmallTileIconWidth + ($xSmallTilePadding * 2) + ($xSmallTileBorderWidth * 2);
+$xSmallTileHeight: $xSmallTileIconHeight + ($xSmallTilePadding * 2) + ($xSmallTileBorderWidth * 2);
+
+.riichi-tile {
+  background: #fff;
+  border: $defaultTileBorderWidth solid #1b5e20;
+  border-radius: 5px;
+  padding: $defaultTilePadding;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.riichi-tile--sided {
+  transform-origin: top right;
+  transform-origin: center center;
+  transform: rotate(-90deg) translateX(calc(($defaultTileWidth - $defaultTileHeight) / 2));
+  margin-left: calc(($defaultTileHeight - $defaultTileWidth) / 2);
+  margin-right: calc(($defaultTileHeight - $defaultTileWidth) / 2);
+  margin-top: calc($defaultTileWidth - $defaultTileHeight);
+}
+
+.riichi-tile--reversed {
+  background: $tileBackColor;
+
+  .riichi-tile-icon {
+    visibility: hidden;
+  }
+}
+
+.riichi-tile--small {
+  padding: $smallTilePadding;
+  border-width: $smallTileBorderWidth;
+
+  width: $smallTileWidth;
+  height: $smallTileHeight;
+
+  &.riichi-tile--sided {
+    transform: rotate(-90deg) translateX(calc(($smallTileWidth - $smallTileHeight) / 2));
+    margin-left: calc(($smallTileHeight - $smallTileWidth) / 2);
+    margin-right: calc(($smallTileHeight - $smallTileWidth) / 2);
+    margin-top: calc($smallTileWidth - $smallTileHeight);
+  }
+
+  .riichi-tile-icon {
+    margin-top: -20px;
+    margin-left: -14px;
+    transform: scale(0.5);
+  }
+}
+
+.riichi-tile--x-small {
+  padding: $xSmallTilePadding;
+  border-width: $xSmallTileBorderWidth;
+  border-radius: 3px;
+
+  width: $xSmallTileWidth;
+  height: $xSmallTileHeight;
+
+  &.riichi-tile--sided {
+    transform: rotate(-90deg) translateX(calc(($xSmallTileWidth - $xSmallTileHeight) / 2));
+    margin-left: calc(($xSmallTileHeight - $xSmallTileWidth) / 2);
+    margin-right: calc(($xSmallTileHeight - $xSmallTileWidth) / 2);
+    margin-top: calc($xSmallTileWidth - $xSmallTileHeight);
+  }
+
+  .riichi-tile-icon {
+    margin-top: -26px;
+    margin-left: -19.5px;
+    transform: scale(0.3333);
+  }
+}

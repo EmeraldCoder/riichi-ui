@@ -1,0 +1,52 @@
+{
+  "name": "@emeraldcoder/riichi-ui-vue",
+  "version": "0.0.0-beta.1",
+  "license": "MIT",
+  "description": "Vue.js design system for riichi mahjong related application",
+  "author": "EmeraldCoder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmeraldCoder/riichi-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EmeraldCoder/riichi-design-system/issues"
+  },
+  "homepage": "https://github.com/EmeraldCoder/riichi-design-system",
+  "keywords": [
+    "Riichi",
+    "Mahjong",
+    "Design System",
+    "Vue.js"
+  ],
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/riichi-ui.es.js",
+  "scripts": {
+    "build": "vite build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-vite": "^0.4.2",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/vue3": "^6.5.16",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "babel-loader": "^8.3.0",
+    "clean-package": "^2.0.0",
+    "riichi-ui-css": "*",
+    "vite": "^4.0.0",
+    "vue": "^3.0.0",
+    "vue-loader": "^16.8.3"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
+}

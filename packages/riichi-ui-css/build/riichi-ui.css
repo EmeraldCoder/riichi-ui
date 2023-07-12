@@ -1,0 +1,403 @@
+.riichi-tile-icon {
+  background: url("../assets/tile-icons-sprite.png") no-repeat top left;
+  width: 58px;
+  height: 78px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.riichi-tile-icon--1m {
+  background-position: 0 0;
+}
+
+.riichi-tile-icon--2m {
+  background-position: 0 -79px;
+}
+
+.riichi-tile-icon--3m {
+  background-position: 0 -158px;
+}
+
+.riichi-tile-icon--4m {
+  background-position: 0 -237px;
+}
+
+.riichi-tile-icon--5m {
+  background-position: 0 -316px;
+}
+
+.riichi-tile-icon--6m {
+  background-position: 0 -395px;
+}
+
+.riichi-tile-icon--7m {
+  background-position: 0 -474px;
+}
+
+.riichi-tile-icon--8m {
+  background-position: 0 -553px;
+}
+
+.riichi-tile-icon--9m {
+  background-position: 0 -632px;
+}
+
+.riichi-tile-icon--1p {
+  background-position: 0 -711px;
+}
+
+.riichi-tile-icon--2p {
+  background-position: 0 -790px;
+}
+
+.riichi-tile-icon--3p {
+  background-position: 0 -869px;
+}
+
+.riichi-tile-icon--4p {
+  background-position: 0 -948px;
+}
+
+.riichi-tile-icon--5p {
+  background-position: 0 -1027px;
+}
+
+.riichi-tile-icon--6p {
+  background-position: 0 -1106px;
+}
+
+.riichi-tile-icon--7p {
+  background-position: 0 -1185px;
+}
+
+.riichi-tile-icon--8p {
+  background-position: 0 -1264px;
+}
+
+.riichi-tile-icon--9p {
+  background-position: 0 -1343px;
+}
+
+.riichi-tile-icon--1s {
+  background-position: 0 -1422px;
+}
+
+.riichi-tile-icon--2s {
+  background-position: 0 -1501px;
+}
+
+.riichi-tile-icon--3s {
+  background-position: 0 -1580px;
+}
+
+.riichi-tile-icon--4s {
+  background-position: 0 -1659px;
+}
+
+.riichi-tile-icon--5s {
+  background-position: 0 -1738px;
+}
+
+.riichi-tile-icon--6s {
+  background-position: 0 -1817px;
+}
+
+.riichi-tile-icon--7s {
+  background-position: 0 -1896px;
+}
+
+.riichi-tile-icon--8s {
+  background-position: 0 -1975px;
+}
+
+.riichi-tile-icon--9s {
+  background-position: 0 -2054px;
+}
+
+.riichi-tile-icon--1z {
+  background-position: 0 -2291px;
+}
+
+.riichi-tile-icon--2z {
+  background-position: 0 -2370px;
+}
+
+.riichi-tile-icon--3z {
+  background-position: 0 -2449px;
+}
+
+.riichi-tile-icon--4z {
+  background-position: 0 -2528px;
+}
+
+.riichi-tile-icon--6z {
+  background-position: 0 -2133px;
+}
+
+.riichi-tile-icon--5z {
+  background: none;
+}
+
+.riichi-tile-icon--7z {
+  background-position: 0 -2212px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .riichi-tile-icon {
+    background-image: url("../assets/tile-icons-sprite.2x.png");
+    background-size: 58px 2607px;
+  }
+}
+.riichi-tile {
+  background: #fff;
+  border: 2px solid #1b5e20;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.riichi-tile--sided {
+  transform-origin: top right;
+  transform-origin: center center;
+  transform: rotate(-90deg) translateX(-10px);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+
+.riichi-tile--reversed {
+  background: #e9b501;
+}
+.riichi-tile--reversed .riichi-tile-icon {
+  visibility: hidden;
+}
+
+.riichi-tile--small {
+  padding: 2px;
+  border-width: 1px;
+  width: 35px;
+  height: 45px;
+}
+.riichi-tile--small.riichi-tile--sided {
+  transform: rotate(-90deg) translateX(-5px);
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: -10px;
+}
+.riichi-tile--small .riichi-tile-icon {
+  margin-top: -20px;
+  margin-left: -14px;
+  transform: scale(0.5);
+}
+
+.riichi-tile--x-small {
+  padding: 1px;
+  border-width: 1px;
+  border-radius: 3px;
+  width: 23.3333333333px;
+  height: 30px;
+}
+.riichi-tile--x-small.riichi-tile--sided {
+  transform: rotate(-90deg) translateX(-3.3333333333px);
+  margin-left: 3.3333333333px;
+  margin-right: 3.3333333333px;
+  margin-top: -6.6666666667px;
+}
+.riichi-tile--x-small .riichi-tile-icon {
+  margin-top: -26px;
+  margin-left: -19.5px;
+  transform: scale(0.3333);
+}
+
+.riichi-tile-group {
+  display: flex;
+  align-items: flex-end;
+}
+.riichi-tile-group.riichi-tile-group--stacked:not(:last-child) .riichi-tile.riichi-tile--sided {
+  margin-right: 8px;
+}
+.riichi-tile-group.riichi-tile-group--stacked:not(:last-child) .riichi-tile.riichi-tile--sided.riichi-tile--small {
+  margin-right: 5px;
+}
+.riichi-tile-group.riichi-tile-group--stacked:not(:last-child) .riichi-tile.riichi-tile--sided.riichi-tile--x-small {
+  margin-right: 2.3333333333px;
+}
+.riichi-tile-group.riichi-tile-group--stacked .riichi-tile:not(:last-child) {
+  margin-bottom: -2px;
+}
+.riichi-tile-group.riichi-tile-group--stacked .riichi-tile:not(:last-child).riichi-tile--small {
+  margin-bottom: -1px;
+}
+.riichi-tile-group.riichi-tile-group--stacked .riichi-tile:not(:last-child).riichi-tile--x-small {
+  margin-bottom: -1px;
+}
+.riichi-tile-group:not(.riichi-tile-group--stacked) .riichi-tile:not(:last-child):not(.riichi-tile--sided) {
+  margin-right: -2px;
+}
+.riichi-tile-group:not(.riichi-tile-group--stacked) .riichi-tile:not(:last-child):not(.riichi-tile--sided).riichi-tile--small {
+  margin-right: -1px;
+}
+.riichi-tile-group:not(.riichi-tile-group--stacked) .riichi-tile:not(:last-child):not(.riichi-tile--sided).riichi-tile--x-small {
+  margin-right: -1px;
+}
+.riichi-tile-group:not(.riichi-tile-group--stacked) .riichi-tile.riichi-tile--sided:not(:last-child) {
+  margin-right: 8px;
+}
+.riichi-tile-group:not(.riichi-tile-group--stacked) .riichi-tile.riichi-tile--sided:not(:last-child).riichi-tile--small {
+  margin-right: 5px;
+}
+.riichi-tile-group:not(.riichi-tile-group--stacked) .riichi-tile.riichi-tile--sided:not(:last-child).riichi-tile--x-small {
+  margin-right: 2.3333333333px;
+}
+
+.riichi-tile-group--stacked {
+  flex-direction: column;
+}
+
+.riichi-tenbou {
+  background: white;
+  height: 20px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+}
+
+.riichi-tenbou--small {
+  width: 100px;
+  height: 10px;
+}
+
+.riichi-tenbou__dot {
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.riichi-tenbou--sen .riichi-tenbou__dot {
+  width: 10px;
+  height: 10px;
+  background: red;
+  transform: translate(-50%, -50%);
+}
+.riichi-tenbou--sen.riichi-tenbou--small .riichi-tenbou__dot {
+  width: 5px;
+  height: 5px;
+}
+
+.riichi-tenbou--hyaku .riichi-tenbou__dot {
+  width: 5px;
+  height: 5px;
+  background: black;
+}
+.riichi-tenbou--hyaku .riichi-tenbou__dot:nth-child(1) {
+  transform: translate(-200%, -125%);
+}
+.riichi-tenbou--hyaku .riichi-tenbou__dot:nth-child(2) {
+  transform: translate(-200%, 25%);
+}
+.riichi-tenbou--hyaku .riichi-tenbou__dot:nth-child(3) {
+  transform: translate(-50%, -125%);
+}
+.riichi-tenbou--hyaku .riichi-tenbou__dot:nth-child(4) {
+  transform: translate(-50%, 25%);
+}
+.riichi-tenbou--hyaku .riichi-tenbou__dot:nth-child(5) {
+  transform: translate(100%, -125%);
+}
+.riichi-tenbou--hyaku .riichi-tenbou__dot:nth-child(6) {
+  transform: translate(100%, 25%);
+}
+.riichi-tenbou--hyaku.riichi-tenbou--small .riichi-tenbou__dot {
+  width: 2.5px;
+  height: 2.5px;
+}
+
+.riichi-tenbou--go-sen .riichi-tenbou__dot {
+  width: 5px;
+  height: 5px;
+  background: red;
+}
+.riichi-tenbou--go-sen .riichi-tenbou__dot:nth-child(1) {
+  transform: translate(-250%, -125%);
+}
+.riichi-tenbou--go-sen .riichi-tenbou__dot:nth-child(2) {
+  transform: translate(-250%, 25%);
+}
+.riichi-tenbou--go-sen .riichi-tenbou__dot:nth-child(3) {
+  width: 7px;
+  height: 7px;
+  transform: translate(-50%, -50%);
+}
+.riichi-tenbou--go-sen .riichi-tenbou__dot:nth-child(4) {
+  transform: translate(150%, -125%);
+}
+.riichi-tenbou--go-sen .riichi-tenbou__dot:nth-child(5) {
+  transform: translate(150%, 25%);
+}
+.riichi-tenbou--go-sen.riichi-tenbou--small .riichi-tenbou__dot {
+  width: 2.5px;
+  height: 2.5px;
+}
+.riichi-tenbou--go-sen.riichi-tenbou--small .riichi-tenbou__dot:nth-child(3) {
+  width: 3.5px;
+  height: 3.5px;
+}
+
+.riichi-tenbou--ichi-man .riichi-tenbou__dot {
+  width: 5px;
+  height: 5px;
+  background: red;
+}
+.riichi-tenbou--ichi-man .riichi-tenbou__dot:nth-child(1) {
+  transform: translate(-250%, -125%);
+}
+.riichi-tenbou--ichi-man .riichi-tenbou__dot:nth-child(2) {
+  transform: translate(-250%, 25%);
+}
+.riichi-tenbou--ichi-man .riichi-tenbou__dot:nth-child(3) {
+  width: 7px;
+  height: 7px;
+  transform: translate(-50%, -50%);
+}
+.riichi-tenbou--ichi-man .riichi-tenbou__dot:nth-child(4) {
+  transform: translate(150%, -125%);
+}
+.riichi-tenbou--ichi-man .riichi-tenbou__dot:nth-child(5) {
+  transform: translate(150%, 25%);
+}
+.riichi-tenbou--ichi-man .riichi-tenbou__dot:nth-child(6) {
+  transform: translate(-400%, -50%);
+}
+.riichi-tenbou--ichi-man .riichi-tenbou__dot:nth-child(7) {
+  transform: translate(300%, -50%);
+}
+.riichi-tenbou--ichi-man .riichi-tenbou__dot:nth-child(8) {
+  background: green;
+  width: 10px;
+  height: 10px;
+  transform: translate(-400%, -50%);
+}
+.riichi-tenbou--ichi-man .riichi-tenbou__dot:nth-child(9) {
+  background: green;
+  width: 10px;
+  height: 10px;
+  transform: translate(300%, -50%);
+}
+.riichi-tenbou--ichi-man.riichi-tenbou--small .riichi-tenbou__dot {
+  width: 2.5px;
+  height: 2.5px;
+}
+.riichi-tenbou--ichi-man.riichi-tenbou--small .riichi-tenbou__dot:nth-child(3) {
+  width: 3.5px;
+  height: 3.5px;
+}
+.riichi-tenbou--ichi-man.riichi-tenbou--small .riichi-tenbou__dot:nth-child(8), .riichi-tenbou--ichi-man.riichi-tenbou--small .riichi-tenbou__dot:nth-child(9) {
+  width: 5px;
+  height: 5px;
+}
+
+/*# sourceMappingURL=riichi-ui.css.map */

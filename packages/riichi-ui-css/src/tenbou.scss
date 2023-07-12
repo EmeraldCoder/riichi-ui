@@ -1,0 +1,187 @@
+.riichi-tenbou {
+  background: white;
+  height: 20px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+}
+
+.riichi-tenbou--small {
+  width: 100px;
+  height: 10px;
+}
+
+.riichi-tenbou__dot {
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.riichi-tenbou--sen {
+  .riichi-tenbou__dot {
+    width: 10px;
+    height: 10px;
+    background: red;
+    transform: translate(-50%, -50%);
+  }
+
+  &.riichi-tenbou--small {
+    .riichi-tenbou__dot {
+      width: 5px;
+      height: 5px;
+    }
+  }
+}
+
+.riichi-tenbou--hyaku {
+  .riichi-tenbou__dot {
+    width: 5px;
+    height: 5px;
+    background: black;
+
+    &:nth-child(1) {
+      transform: translate(-200%, -125%);
+    }
+
+    &:nth-child(2) {
+      transform: translate(-200%, 25%);
+    }
+
+    &:nth-child(3) {
+      transform: translate(-50%, -125%);
+    }
+
+    &:nth-child(4) {
+      transform: translate(-50%, 25%);
+    }
+
+    &:nth-child(5) {
+      transform: translate(100%, -125%);
+    }
+
+    &:nth-child(6) {
+      transform: translate(100%, 25%);
+    }
+  }
+
+  &.riichi-tenbou--small {
+    .riichi-tenbou__dot {
+      width: calc(5px/2);
+      height: calc(5px/2);
+    }
+  }
+}
+
+.riichi-tenbou--go-sen {
+  .riichi-tenbou__dot {
+    width: 5px;
+    height: 5px;
+    background: red;
+
+    &:nth-child(1) {
+      transform: translate(-250%, -125%);
+    }
+
+    &:nth-child(2) {
+      transform: translate(-250%, 25%);
+    }
+
+    &:nth-child(3) {
+      width: 7px;
+      height: 7px;
+      transform: translate(-50%, -50%);
+    }
+
+    &:nth-child(4) {
+      transform: translate(150%, -125%);
+    }
+
+    &:nth-child(5) {
+      transform: translate(150%, 25%);
+    }
+  }
+
+  &.riichi-tenbou--small {
+    .riichi-tenbou__dot {
+      width: calc(5px/2);
+      height: calc(5px/2);
+
+      &:nth-child(3) {
+        width: calc(7px/2);
+        height: calc(7px/2);
+      }
+    }
+  }
+}
+
+.riichi-tenbou--ichi-man {
+  .riichi-tenbou__dot {
+    width: 5px;
+    height: 5px;
+    background: red;
+
+    &:nth-child(1) {
+      transform: translate(-250%, -125%);
+    }
+
+    &:nth-child(2) {
+      transform: translate(-250%, 25%);
+    }
+
+    &:nth-child(3) {
+      width: 7px;
+      height: 7px;
+      transform: translate(-50%, -50%);
+    }
+
+    &:nth-child(4) {
+      transform: translate(150%, -125%);
+    }
+
+    &:nth-child(5) {
+      transform: translate(150%, 25%);
+    }
+
+    &:nth-child(6) {
+      transform: translate(-400%, -50%);
+    }
+
+    &:nth-child(7) {
+      transform: translate(300%, -50%);
+    }
+
+    &:nth-child(8) {
+      background: green;
+      width: 10px;
+      height: 10px;
+      transform: translate(-400%, -50%);
+    }
+
+    &:nth-child(9) {
+      background: green;
+      width: 10px;
+      height: 10px;
+      transform: translate(300%, -50%);
+    }
+  }
+
+  &.riichi-tenbou--small {
+    .riichi-tenbou__dot {
+      width: calc(5px/2);
+      height: calc(5px/2);
+
+      &:nth-child(3) {
+        width: calc(7px/2);
+        height: calc(7px/2);
+      }
+
+      &:nth-child(8), &:nth-child(9) {
+        width: 5px;
+        height: 5px;
+      }
+    }
+  }
+}

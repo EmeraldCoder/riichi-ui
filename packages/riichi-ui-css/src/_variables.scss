@@ -1,0 +1,12 @@
+@use "sass:math";
+
+$tileBackColor: #e9b501;
+
+$defaultTileIconWidth: 58px;
+$defaultTileIconHeight: 78px;
+
+$smallTileIconWidth: math.div($defaultTileIconWidth, 2);
+$smallTileIconHeight: math.div($defaultTileIconHeight, 2);
+
+$xSmallTileIconWidth: math.div($defaultTileIconWidth, 3);
+$xSmallTileIconHeight: math.div($defaultTileIconHeight, 3);

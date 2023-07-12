@@ -1,0 +1,74 @@
+@use "sass:math";
+@import './_variables';
+
+$defaultTilePadding: 5px;
+$defaultTileBorderWidth: 2px;
+$defaultTileWidth: $defaultTileIconWidth + ($defaultTilePadding * 2) + ($defaultTileBorderWidth * 2);
+$defaultTileHeight: $defaultTileIconHeight + ($defaultTilePadding * 2) + ($defaultTileBorderWidth * 2);
+
+$smallTilePadding: 2px;
+$smallTileBorderWidth: 1px;
+$smallTileWidth: $smallTileIconWidth + ($smallTilePadding * 2) + ($smallTileBorderWidth * 2);
+$smallTileHeight: $smallTileIconHeight + ($smallTilePadding * 2) + ($smallTileBorderWidth * 2);
+
+$xSmallTilePadding: 1px;
+$xSmallTileBorderWidth: 1px;
+$xSmallTileWidth: $xSmallTileIconWidth + ($xSmallTilePadding * 2) + ($xSmallTileBorderWidth * 2);
+$xSmallTileHeight: $xSmallTileIconHeight + ($xSmallTilePadding * 2) + ($xSmallTileBorderWidth * 2);
+
+.riichi-tile-group {
+  display: flex;
+  align-items: flex-end;
+
+  &.riichi-tile-group--stacked {
+    &:not(:last-child) {
+      .riichi-tile.riichi-tile--sided {
+        margin-right: calc((($defaultTileHeight - $defaultTileWidth) / 2) - 2px);
+        &.riichi-tile--small {
+          margin-right: calc((($smallTileHeight - $smallTileWidth) / 2));
+        }
+        &.riichi-tile--x-small {
+          margin-right: calc((($xSmallTileHeight - $xSmallTileWidth) / 2) - 1px);
+        }
+      }
+    }
+
+    .riichi-tile:not(:last-child) {
+      margin-bottom: -2px;
+      &.riichi-tile--small {
+        margin-bottom: -1px;
+      }
+      &.riichi-tile--x-small {
+        margin-bottom: -1px;
+      }
+    }
+  }
+
+  &:not(.riichi-tile-group--stacked) {
+    .riichi-tile:not(:last-child):not(.riichi-tile--sided) {
+      margin-right: -2px;
+
+      &.riichi-tile--small {
+        margin-right: -1px;
+      }
+      &.riichi-tile--x-small {
+        margin-right: -1px;
+      }
+    }
+
+    .riichi-tile.riichi-tile--sided:not(:last-child) {
+      margin-right: calc((($defaultTileHeight - $defaultTileWidth) / 2) - 2px);
+
+      &.riichi-tile--small {
+        margin-right: calc(($smallTileHeight - $smallTileWidth) / 2);
+      }
+      &.riichi-tile--x-small {
+        margin-right: calc((($xSmallTileHeight - $xSmallTileWidth) / 2) - 1px);
+      }
+    }
+  }
+}
+
+.riichi-tile-group--stacked {
+  flex-direction: column;
+}
