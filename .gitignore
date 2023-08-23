@@ -1,2 +1,4 @@
 **/node_modules
 build-storybook.log
+packages/riichi-ui-css/build
+packages/riichi-ui-vue/dist
