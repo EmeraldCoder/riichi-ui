@@ -36,6 +36,7 @@ importers:
   packages/riichi-ui-vue:
     specifiers:
       '@babel/core': ^7.20.12
+      '@emeraldcoder/riichi-ui-css': '*'
       '@storybook/addon-actions': ^6.5.16
       '@storybook/addon-essentials': ^6.5.16
       '@storybook/addon-interactions': ^6.5.16
@@ -46,12 +47,12 @@ importers:
       '@vitejs/plugin-vue': ^4.0.0
       babel-loader: ^8.3.0
       clean-package: ^2.0.0
-      riichi-ui-css: '*'
       vite: ^4.0.0
       vue: ^3.0.0
       vue-loader: ^16.8.3
     devDependencies:
       '@babel/core': 7.20.12
+      '@emeraldcoder/riichi-ui-css': link:../riichi-ui-css
       '@storybook/addon-actions': 6.5.16
       '@storybook/addon-essentials': 6.5.16_pvnb3nbttnr6zoxnf56l4iaeta
       '@storybook/addon-interactions': 6.5.16
@@ -62,7 +63,6 @@ importers:
       '@vitejs/plugin-vue': 4.0.0_vite@4.1.1+vue@3.2.47
       babel-loader: 8.3.0_@babel+core@7.20.12
       clean-package: 2.2.0
-      riichi-ui-css: link:../riichi-ui-css
       vite: 4.1.1
       vue: 3.2.47
       vue-loader: 16.8.3_vue@3.2.47

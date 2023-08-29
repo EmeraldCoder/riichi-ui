@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
+    "@emeraldcoder/riichi-ui-css": "*",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",
@@ -41,7 +42,6 @@
     "@vitejs/plugin-vue": "^4.0.0",
     "babel-loader": "^8.3.0",
     "clean-package": "^2.0.0",
-    "riichi-ui-css": "*",
     "vite": "^4.0.0",
     "vue": "^3.0.0",
     "vue-loader": "^16.8.3"
