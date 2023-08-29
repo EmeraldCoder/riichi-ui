@@ -111,7 +111,7 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .riichi-tile-icon {
+  .riichi-tile-icon:not(.riichi-tile-icon--5z) {
       background-image: url('../assets/tile-icons-sprite.2x.png');
       background-size: 58px 2607px;
   }
