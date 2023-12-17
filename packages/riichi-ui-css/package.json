@@ -24,7 +24,7 @@
   "scripts": {
     "build": "rimraf build && sass src/index.scss build/riichi-ui.css && sass --style=compressed src/index.scss build/riichi-ui.min.css",
     "storybook:dev": "storybook dev -p 8080",
-    "storybook:build": "storybook build",
+    "storybook:build": "storybook build --docs",
     "storybook:docs": "storybook dev --docs -p 8081",
     "prepack": "clean-package",
     "postpack": "clean-package restore"

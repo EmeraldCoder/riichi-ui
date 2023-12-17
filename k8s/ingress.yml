@@ -5,8 +5,6 @@ metadata:
   namespace: riichi-design-system
   annotations:
     kubernetes.io/ingress.class: "nginx"
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
-    nginx.ingress.kubernetes.io/service-upstream: "true"
 spec:
   rules:
   - host: riichi-ui-css.phil.moe
@@ -19,6 +17,7 @@ spec:
             name: riichi-ui-css-storybook-web
             port:
               number: 80
+
   - host: riichi-ui-vue.phil.moe
     http:
       paths:

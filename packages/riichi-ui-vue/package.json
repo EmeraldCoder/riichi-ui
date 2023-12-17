@@ -26,7 +26,7 @@
   "scripts": {
     "build": "vite build",
     "storybook:dev": "storybook dev -p 8082",
-    "storybook:build": "storybook build",
+    "storybook:build": "storybook build --docs",
     "storybook:docs": "storybook dev --docs -p 8083",
     "prepack": "clean-package",
     "postpack": "clean-package restore"
