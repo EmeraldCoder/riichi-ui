@@ -3,6 +3,7 @@ import Tile from './tile.vue'
 export default {
   title: 'Tile',
   component: Tile,
+  tags: ['autodocs'],
   args: {
     tile: '1p'
   }

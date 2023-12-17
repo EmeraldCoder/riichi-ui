@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - uses: pnpm/action-setup@v2.2.2
+      with:
+        version: 7
+        run_install: false
+
+    - name: Get pnpm store directory
+      id: pnpm-cache
+      run: |
+        echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+    - uses: actions/cache@v3
+      name: Setup pnpm cache
+      with:
+        path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+
+    - name: Install dependencies
+      run: pnpm install
+
+    - name: Build storybook documentation websites
+        run: pnpm -r run storybook:build
+
+    - name: Login to Docker image repository
+      run: |
+        docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
+
+    - name: Build/publish riichi-ui-css-storybook-web docker image
+      run: |
+        cd $GITHUB_WORKSPACE/packages/riichi-ui-css
+        docker build -t emeraldcoder/riichi-ui-css-storybook-web:${{ github.sha }} .
+        docker push emeraldcoder/riichi-ui-css-storybook-web:${{ github.sha }}
+
+    - name: Build/publish riichi-ui-vue-storybook-web docker image
+      run: |
+        cd $GITHUB_WORKSPACE/packages/riichi-ui-vue
+        docker build -t emeraldcoder/riichi-ui-vue-storybook-web:${{ github.sha }} .
+        docker push emeraldcoder/riichi-ui-vue-storybook-web:${{ github.sha }}
+
+    - name: Deploy to K8S
+      run: |
+        cat <<< "${{ secrets.DO_K8S_CONFIG }}" > $GITHUB_WORKSPACE/.kubeconfig
+        IMAGE_TAG=${{ github.sha }} envsubst < $GITHUB_WORKSPACE/k8s/riichi-ui-css-storybook-web.yml > $GITHUB_WORKSPACE/k8s/riichi-ui-css-storybook-web.processed.yml
+        IMAGE_TAG=${{ github.sha }} envsubst < $GITHUB_WORKSPACE/k8s/riichi-ui-vue-storybook-web.yml > $GITHUB_WORKSPACE/k8s/riichi-ui-vue-storybook-web.processed.yml
+        kubectl --kubeconfig=$GITHUB_WORKSPACE/.kubeconfig apply -f $GITHUB_WORKSPACE/k8s/namespace.yml
+        kubectl --kubeconfig=$GITHUB_WORKSPACE/.kubeconfig apply -f $GITHUB_WORKSPACE/k8s/riichi-ui-css-storybook-web.processed.yml
+        kubectl --kubeconfig=$GITHUB_WORKSPACE/.kubeconfig apply -f $GITHUB_WORKSPACE/k8s/riichi-ui-vue-storybook-web.processed.yml
+        kubectl --kubeconfig=$GITHUB_WORKSPACE/.kubeconfig apply -f $GITHUB_WORKSPACE/k8s/ingress.yml

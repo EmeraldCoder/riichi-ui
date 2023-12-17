@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: riichi-ui-vue-storybook-web
+  namespace: riichi-design-system
+  labels:
+    app: riichi-ui-vue-storybook-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: riichi-ui-vue-storybook-web
+  template:
+    metadata:
+      labels:
+        app: riichi-ui-vue-storybook-web
+    spec:
+      containers:
+      - name: riichi-ui-vue-storybook-web
+        image: emeraldcoder/riichi-ui-vue-storybook-web:${IMAGE_TAG}
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: riichi-ui-vue-storybook-web
+  namespace: riichi-design-system
+spec:
+  selector:
+    app: riichi-ui-vue-storybook-web
+  ports:
+  - name: tcp
+    port: 80

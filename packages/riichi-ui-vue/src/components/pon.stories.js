@@ -3,6 +3,7 @@ import Pon from './pon.vue'
 export default {
   title: 'Pon',
   component: Pon,
+  tags: ['autodocs'],
   args: {
   }
 }

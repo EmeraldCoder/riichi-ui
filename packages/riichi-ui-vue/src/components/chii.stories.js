@@ -3,6 +3,7 @@ import Chii from './chii.vue'
 export default {
   title: 'Chii',
   component: Chii,
+  tags: ['autodocs'],
   args: {
   }
 }

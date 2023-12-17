@@ -1,7 +1,8 @@
 import './index.scss'
 
 export default {
-  title: 'Tiles'
+  title: 'Tiles',
+  tags: ['autodocs']
 }
 
 export const Basic = () => {

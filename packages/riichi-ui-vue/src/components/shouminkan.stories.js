@@ -3,6 +3,7 @@ import Shouminkan from './shouminkan.vue'
 export default {
   title: 'Shouminkan',
   component: Shouminkan,
+  tags: ['autodocs'],
   args: {
   }
 }
