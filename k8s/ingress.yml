@@ -24,7 +24,7 @@ spec:
       paths:
       - path: /
         pathType: Prefix
-        backtend:
+        backend:
           service:
             name: riichi-ui-vue-storybook-web
             port:

@@ -1,4 +1,4 @@
-name: CI
+name: Automatic Storybook Publishing
 
 on:
   push:
