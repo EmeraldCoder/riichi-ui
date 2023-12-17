@@ -1,22 +1,22 @@
 {
   "name": "@emeraldcoder/riichi-ui-vue",
-  "version": "0.0.0-beta.3",
+  "version": "0.0.0-beta.4",
   "type": "module",
   "license": "MIT",
-  "description": "Vue.js design system for riichi mahjong related application",
+  "description": "Vue.js UI components for riichi mahjong related application",
   "author": "EmeraldCoder",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EmeraldCoder/riichi-design-system.git"
+    "url": "git+https://github.com/EmeraldCoder/riichi-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/EmeraldCoder/riichi-design-system/issues"
+    "url": "https://github.com/EmeraldCoder/riichi-ui/issues"
   },
-  "homepage": "https://github.com/EmeraldCoder/riichi-design-system",
+  "homepage": "https://github.com/EmeraldCoder/riichi-ui",
   "keywords": [
     "Riichi",
     "Mahjong",
-    "Design System",
+    "UI Components",
     "Vue.js"
   ],
   "files": [

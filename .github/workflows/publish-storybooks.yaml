@@ -3,7 +3,7 @@ name: Automatic Storybook Publishing
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test:

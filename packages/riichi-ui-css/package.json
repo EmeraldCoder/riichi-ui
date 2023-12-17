@@ -1,21 +1,21 @@
 {
   "name": "@emeraldcoder/riichi-ui-css",
-  "version": "0.0.0-beta.3",
+  "version": "0.0.0-beta.4",
   "license": "MIT",
-  "description": "CSS design system for riichi mahjong related application",
+  "description": "CSS UI components riichi mahjong related application",
   "author": "EmeraldCoder",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EmeraldCoder/riichi-design-system.git"
+    "url": "git+https://github.com/EmeraldCoder/riichi-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/EmeraldCoder/riichi-design-system/issues"
+    "url": "https://github.com/EmeraldCoder/riichi-ui/issues"
   },
-  "homepage": "https://github.com/EmeraldCoder/riichi-design-system",
+  "homepage": "https://github.com/EmeraldCoder/riichi-ui",
   "keywords": [
     "Riichi",
     "Mahjong",
-    "Design System"
+    "UI Components"
   ],
   "files": [
     "build",
