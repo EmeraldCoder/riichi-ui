@@ -38,7 +38,7 @@ jobs:
       run: pnpm install
 
     - name: Build storybook documentation websites
-        run: pnpm -r run storybook:build
+      run: pnpm -r run storybook:build
 
     - name: Login to Docker image repository
       run: |
