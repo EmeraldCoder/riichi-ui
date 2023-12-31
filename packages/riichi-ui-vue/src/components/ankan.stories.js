@@ -1,7 +1,7 @@
 import Ankan from './ankan.vue'
 
 export default {
-  title: 'Ankan',
+  title: 'Components/Calls/Ankan',
   component: Ankan,
   tags: ['autodocs'],
   args: {

@@ -2,7 +2,7 @@ import TileGroup from './tile-group.vue'
 import Tile from './tile.vue'
 
 export default {
-  title: 'Tile Group',
+  title: 'Components/Tile Group',
   component: TileGroup,
   tags: ['autodocs'],
   args: {

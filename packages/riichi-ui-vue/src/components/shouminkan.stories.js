@@ -1,7 +1,7 @@
 import Shouminkan from './shouminkan.vue'
 
 export default {
-  title: 'Shouminkan',
+  title: 'Components/Calls/Shouminkan',
   component: Shouminkan,
   tags: ['autodocs'],
   args: {

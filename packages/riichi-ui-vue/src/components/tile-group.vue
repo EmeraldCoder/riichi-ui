@@ -15,5 +15,5 @@ defineProps({
 </template>
 
 <style lang="scss">
-  @import '@emeraldcoder/riichi-ui-css/src/tile-group.scss';
+  @import '@emeraldcoder/riichi-ui-css/src/components/tile-group.scss';
 </style>

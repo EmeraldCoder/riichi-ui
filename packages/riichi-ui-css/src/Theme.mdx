@@ -1,0 +1,57 @@
+# Theme Customization
+
+While full CSS customization is possible by understanding the structure of CSS classes and examining the code, this library simplifies the process by offering tokens as CSS variables. These tokens facilitate effortless modification, empowering you to tailor the appearance of specific components.
+
+## Available Tokens
+
+Explore the list of available tokens:
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+      <th>Default Value </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>riichi-tile-back-color</td>
+      <td>Color of the back of the tile (when reversed)</td>
+      <td>#e9b501</td>
+    </tr>
+    <tr>
+      <td>riichi-tile-border-color</td>
+      <td>Color of the tile's border</td>
+      <td>#000000</td>
+    </tr>
+  </tbody>
+</table>
+
+## Implementation
+
+### Modifying Tokens
+
+To modify tokens in your project, set the CSS variable to the desired value after loading the library's CSS file:
+
+```CSS
+:root {
+  --riichi-tile-back-color: yellow;
+  --riichi-tile-border-color: red;
+}
+```
+
+### Using Themes
+
+If you desire a specific part of your application to adopt a distinct theme, encapsulate the variables within a theme CSS class:
+
+```CSS
+.dark-theme {
+  :root {
+    --riichi-tile-back-color: black;
+    --riichi-tile-border-color: black;
+  }
+}
+```
+
+By encapsulating tokens within a class like .dark-theme, you can apply a different set of token values to achieve a unique visual theme for that specific section of your application.

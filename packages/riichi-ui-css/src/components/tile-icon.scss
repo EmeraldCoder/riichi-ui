@@ -1,7 +1,7 @@
- @import './variables';
+ @import '../variables';
 
  .riichi-tile-icon {
-  background: url('../assets/tile-icons-sprite.png') no-repeat top left;
+  background: url('../../assets/tile-icons-sprite.png') no-repeat top left;
   width: $defaultTileIconWidth;
   height: $defaultTileIconHeight;
   display: block;
@@ -112,7 +112,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .riichi-tile-icon:not(.riichi-tile-icon--5z) {
-      background-image: url('../assets/tile-icons-sprite.2x.png');
+      background-image: url('../../assets/tile-icons-sprite.2x.png');
       background-size: 58px 2607px;
   }
 }

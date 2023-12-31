@@ -1,7 +1,7 @@
 import Tile from './tile.vue'
 
 export default {
-  title: 'Tile',
+  title: 'Components/Tile',
   component: Tile,
   tags: ['autodocs'],
   args: {

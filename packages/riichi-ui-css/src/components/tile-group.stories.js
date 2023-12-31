@@ -1,11 +1,11 @@
-import './index.scss'
+import '../index.scss'
 
 export default {
-  title: 'Tile Groups',
+  title: 'Components/Tile Group',
   tags: ['autodocs']
 }
 
-export const Basic = () => {
+export const Default = () => {
   return `
 <span class="riichi-tile-group">
   <span class="riichi-tile"><span class="riichi-tile-icon riichi-tile-icon--1m"></span></span>

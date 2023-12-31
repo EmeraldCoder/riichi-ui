@@ -1,12 +1,28 @@
 @use "sass:math";
 
-$tileBackColor: #e9b501;
-
 $defaultTileIconWidth: 58px;
 $defaultTileIconHeight: 78px;
+$defaultTilePadding: 5px;
+$defaultTileBorderWidth: 2px;
+$defaultTileWidth: $defaultTileIconWidth + ($defaultTilePadding * 2) + ($defaultTileBorderWidth * 2);
+$defaultTileHeight: $defaultTileIconHeight + ($defaultTilePadding * 2) + ($defaultTileBorderWidth * 2);
 
 $smallTileIconWidth: math.div($defaultTileIconWidth, 2);
 $smallTileIconHeight: math.div($defaultTileIconHeight, 2);
+$smallTilePadding: 2px;
+$smallTileBorderWidth: 1px;
+$smallTileWidth: $smallTileIconWidth + ($smallTilePadding * 2) + ($smallTileBorderWidth * 2);
+$smallTileHeight: $smallTileIconHeight + ($smallTilePadding * 2) + ($smallTileBorderWidth * 2);
 
 $xSmallTileIconWidth: math.div($defaultTileIconWidth, 3);
 $xSmallTileIconHeight: math.div($defaultTileIconHeight, 3);
+$xSmallTilePadding: 1px;
+$xSmallTileBorderWidth: 1px;
+$xSmallTileWidth: $xSmallTileIconWidth + ($xSmallTilePadding * 2) + ($xSmallTileBorderWidth * 2);
+$xSmallTileHeight: $xSmallTileIconHeight + ($xSmallTilePadding * 2) + ($xSmallTileBorderWidth * 2);
+
+/* those variables are CSS variables to allow library user to overwrite them easily */
+:root {
+  --riichi-tile-back-color: #e9b501;
+  --riichi-tile-border-color: #000000;
+}

@@ -1,24 +1,8 @@
-@use "sass:math";
-@import './_variables';
-
-$defaultTilePadding: 5px;
-$defaultTileBorderWidth: 2px;
-$defaultTileWidth: $defaultTileIconWidth + ($defaultTilePadding * 2) + ($defaultTileBorderWidth * 2);
-$defaultTileHeight: $defaultTileIconHeight + ($defaultTilePadding * 2) + ($defaultTileBorderWidth * 2);
-
-$smallTilePadding: 2px;
-$smallTileBorderWidth: 1px;
-$smallTileWidth: $smallTileIconWidth + ($smallTilePadding * 2) + ($smallTileBorderWidth * 2);
-$smallTileHeight: $smallTileIconHeight + ($smallTilePadding * 2) + ($smallTileBorderWidth * 2);
-
-$xSmallTilePadding: 1px;
-$xSmallTileBorderWidth: 1px;
-$xSmallTileWidth: $xSmallTileIconWidth + ($xSmallTilePadding * 2) + ($xSmallTileBorderWidth * 2);
-$xSmallTileHeight: $xSmallTileIconHeight + ($xSmallTilePadding * 2) + ($xSmallTileBorderWidth * 2);
+@import '../_variables';
 
 .riichi-tile {
   background: #fff;
-  border: $defaultTileBorderWidth solid #1b5e20;
+  border: $defaultTileBorderWidth solid var(--riichi-tile-border-color);
   border-radius: 5px;
   padding: $defaultTilePadding;
   display: inline-block;
@@ -35,7 +19,7 @@ $xSmallTileHeight: $xSmallTileIconHeight + ($xSmallTilePadding * 2) + ($xSmallTi
 }
 
 .riichi-tile--reversed {
-  background: $tileBackColor;
+  background: var(--riichi-tile-back-color);
 
   .riichi-tile-icon {
     visibility: hidden;

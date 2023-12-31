@@ -29,5 +29,5 @@ const numberOfDots = computed(() => {
 </template>
 
 <style lang="scss">
-@import '@emeraldcoder/riichi-ui-css/src/tenbou.scss';
+@import '@emeraldcoder/riichi-ui-css/src/components/tenbou.scss';
 </style>

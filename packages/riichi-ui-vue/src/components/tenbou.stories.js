@@ -1,7 +1,7 @@
 import Tenbou from './tenbou.vue'
 
 export default {
-  title: 'Tenbou',
+  title: 'Components/Tenbou',
   component: Tenbou,
   tags: ['autodocs'],
   args: {

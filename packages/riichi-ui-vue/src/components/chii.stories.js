@@ -1,7 +1,7 @@
 import Chii from './chii.vue'
 
 export default {
-  title: 'Chii',
+  title: 'Components/Calls/Chii',
   component: Chii,
   tags: ['autodocs'],
   args: {

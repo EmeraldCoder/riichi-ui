@@ -1,7 +1,7 @@
 import Pon from './pon.vue'
 
 export default {
-  title: 'Pon',
+  title: 'Components/Calls/Pon',
   component: Pon,
   tags: ['autodocs'],
   args: {

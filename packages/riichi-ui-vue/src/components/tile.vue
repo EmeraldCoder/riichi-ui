@@ -36,5 +36,5 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-@import '@emeraldcoder/riichi-ui-css/src/tile.scss';
+@import '@emeraldcoder/riichi-ui-css/src/components/tile.scss';
 </style>

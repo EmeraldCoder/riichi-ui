@@ -1,7 +1,7 @@
-import './index.scss'
+import '../index.scss'
 
 export default {
-  title: 'Tenbou',
+  title: 'Components/Tenbou',
   tags: ['autodocs']
 }
 

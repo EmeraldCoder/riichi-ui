@@ -1,6 +1,6 @@
 {
   "name": "@emeraldcoder/riichi-ui-vue",
-  "version": "0.0.0-beta.4",
+  "version": "0.0.0-beta.5",
   "type": "module",
   "license": "MIT",
   "description": "Vue.js UI components for riichi mahjong related application",

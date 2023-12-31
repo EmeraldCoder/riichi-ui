@@ -1,7 +1,7 @@
 import Daiminkan from './daiminkan.vue'
 
 export default {
-  title: 'Daiminkan',
+  title: 'Components/Calls/Daiminkan',
   component: Daiminkan,
   tags: ['autodocs'],
   args: {
