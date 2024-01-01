@@ -34,7 +34,3 @@ const props = defineProps({
     <TileIcon :tile="props.tile"/>
   </span>
 </template>
-
-<style lang="scss">
-@import '@emeraldcoder/riichi-ui-css/src/components/tile.scss';
-</style>

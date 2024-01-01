@@ -1,3 +1,5 @@
+import '@emeraldcoder/riichi-ui-css/build/riichi-ui.css'
+
 export { default as TileIcon } from './components/tile-icon.vue'
 export { default as Tile } from './components/tile.vue'
 export { default as TileGroup } from './components/tile-group.vue'

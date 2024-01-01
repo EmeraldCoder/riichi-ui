@@ -27,7 +27,3 @@ const numberOfDots = computed(() => {
     <span class="riichi-tenbou__dot" v-for="i in numberOfDots" :key="i"></span>
   </span>
 </template>
-
-<style lang="scss">
-@import '@emeraldcoder/riichi-ui-css/src/components/tenbou.scss';
-</style>

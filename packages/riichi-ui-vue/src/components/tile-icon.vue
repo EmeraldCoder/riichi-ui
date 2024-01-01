@@ -14,7 +14,3 @@ const cssClassname = computed(() => props.tile == null ? 'riichi-tile-icon' : `r
 <template>
   <span :class="cssClassname"></span>
 </template>
-
-<style lang="scss">
-@import '@emeraldcoder/riichi-ui-css/src/components/tile-icon.scss';
-</style>
