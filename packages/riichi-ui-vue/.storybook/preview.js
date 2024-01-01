@@ -1,4 +1,4 @@
-import '@emeraldcoder/riichi-ui-css/build/riichi-ui.css'
+import '@emeraldcoder/riichi-ui-css/src/index.scss'
 
 export default {
   parameters: {
