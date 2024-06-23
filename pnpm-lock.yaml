@@ -50,7 +50,7 @@ importers:
   packages/riichi-ui-vue:
     devDependencies:
       '@emeraldcoder/riichi-ui-css':
-        specifier: '*'
+        specifier: 'workspace:*'
         version: link:../riichi-ui-css
       '@storybook/addon-essentials':
         specifier: ^7.0.0
