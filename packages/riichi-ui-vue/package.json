@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@vue/compiler-core": "^3.0.0",
-    "@emeraldcoder/riichi-ui-css": "*",
+    "@emeraldcoder/riichi-ui-css": "workspace:*",
     "@storybook/addon-essentials": "^7.0.0",
     "@storybook/addon-interactions": "^7.0.0",
     "@storybook/addon-links": "^7.0.0",
