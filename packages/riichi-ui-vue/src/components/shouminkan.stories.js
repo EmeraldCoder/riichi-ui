@@ -18,6 +18,22 @@ const Template = (args) => ({
 
 export const Base = Template.bind()
 Base.args = {
-  tile: '1m',
-  from: 0
+  tiles: ['1m', '1m', '1m'],
+  sidedTileIndex: 0,
+  kanTile: '1m'
+}
+
+export const WithAkaDoraAsKanTile = Template.bind()
+WithAkaDoraAsKanTile.args = {
+  tiles: ['5m', '5m', '5m'],
+  sidedTileIndex: 0,
+  kanTile: '0m'
+}
+
+export const Small = Template.bind()
+Small.args = {
+  tiles: ['1m', '1m', '1m'],
+  sidedTileIndex: 0,
+  kanTile: '1m',
+  small: true
 }

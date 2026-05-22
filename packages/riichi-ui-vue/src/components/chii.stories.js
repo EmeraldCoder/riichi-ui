@@ -18,6 +18,30 @@ const Template = (args) => ({
 
 export const Base = Template.bind()
 Base.args = {
-  tile: '1m',
-  fromTile: '2m'
+  tiles: ['1m', '2m', '3m'],
+  sidedTileIndex: 0
+}
+
+export const WithoutSidedTileIndex = Template.bind()
+WithoutSidedTileIndex.args = {
+  tiles: ['1m', '2m', '3m']
+}
+
+export const WithCustomSidedTileIndex = Template.bind()
+WithCustomSidedTileIndex.args = {
+  tiles: ['1m', '2m', '3m'],
+  sidedTileIndex: 1
+}
+
+export const NotInSequenceOrder = Template.bind()
+NotInSequenceOrder.args = {
+  tiles: ['2m', '1m', '3m'],
+  sidedTileIndex: 0
+}
+
+export const Small = Template.bind()
+Small.args = {
+  tiles: ['1m', '2m', '3m'],
+  sidedTileIndex: 0,
+  small: true
 }

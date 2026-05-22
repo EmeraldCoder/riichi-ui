@@ -3,11 +3,11 @@ import Tile from './tile.vue'
 import TileGroup from './tile-group.vue'
 
 defineProps({
-  tile: {
-    type: String,
+  tiles: {
+    type: Array,
     required: true
   },
-  from: {
+  sidedTileIndex: {
     type: Number,
     required: true
   },
@@ -21,6 +21,6 @@ defineProps({
 
 <template>
   <tile-group>
-    <tile v-for="(_, i) in 3" :tile="tile" :key="i" :sided="i === from" :small="small"/>
+    <tile v-for="(tile, i) in tiles" :tile="tile" :key="i" :sided="i === sidedTileIndex" :small="small"/>
   </tile-group>
 </template>

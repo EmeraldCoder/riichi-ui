@@ -18,6 +18,13 @@ const Template = (args) => ({
 
 export const Base = Template.bind()
 Base.args = {
-  tile: '1m',
-  from: 0
+  tiles: ['1m', '1m', '1m', '1m'],
+  sidedTileIndex: 0
+}
+
+export const Small = Template.bind()
+Small.args = {
+  tiles: ['1m', '1m', '1m', '1m'],
+  sidedTileIndex: 0,
+  small: true
 }

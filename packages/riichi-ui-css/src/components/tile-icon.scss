@@ -107,10 +107,19 @@
 .riichi-tile-icon--7z {
   background-position: 0 -2212px;
 }
+.riichi-tile-icon--0m {
+  background-position: 0 -2607px;
+}
+.riichi-tile-icon--0p {
+  background-position: 0 -2686px;
+}
+.riichi-tile-icon--0s {
+  background-position: 0 -2765px;
+}
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .riichi-tile-icon:not(.riichi-tile-icon--5z) {
       background-image: url('../assets/tile-icons-sprite.2x.png');
-      background-size: 58px 2607px;
+      background-size: 59px 2844px;
   }
 }
