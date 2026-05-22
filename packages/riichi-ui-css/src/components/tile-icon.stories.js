@@ -166,6 +166,18 @@ export const List = () => {
       <span class="riichi-tile-icon riichi-tile-icon--7z"></span>
       <div>7z</div>
   </div>
+  <div>
+      <span class="riichi-tile-icon riichi-tile-icon--0m"></span>
+      <div>0m</div>
+  </div>
+  <div>
+      <span class="riichi-tile-icon riichi-tile-icon--0p"></span>
+      <div>0p</div>
+  </div>
+  <div>
+      <span class="riichi-tile-icon riichi-tile-icon--0s"></span>
+      <div>0s</div>
+  </div>
 </div>
   `
 }
